@@ -6,7 +6,7 @@ Scripts for automating developer enviroment setup
 
 ## Steps
 
-1. Check the `chocoPackages.config` file to ensure all desired packages are there
+1. Check the `chocoPackages.config` file to ensure all desired [Chocolatey](https://chocolatey.org/) packages are there
   
    **NOTE:** You can search for Chocolatey packages to add at the [Community Package Repository](https://community.chocolatey.org/packages)
    
@@ -26,10 +26,20 @@ Scripts for automating developer enviroment setup
    
    Additional details about what can go into the `chocoPackages.config` can be found at [Packages.config](https://docs.chocolatey.org/en-us/choco/commands/install#packages.config)
    
-3. Run `setup.cmd` as _Administrator_
-4. Follow any prompts any the command window, _these can vary depending upon what is being installed_
-5. Check for any errors
-6. Reboot machine
+3. Optional, If installing any PowerShell modules, check the `poshModules.config` file
+  
+   This file is expecting the id of a module from the [PowerShell Gallery](https://www.powershellgallery.com/) 
+   
+   Specify name of module id
+   
+   ```xml
+   <module id="Az" />
+   ```
+   
+5. Run `setup.cmd` as _Administrator_
+6. Follow any prompts any the command window, _these can vary depending upon what is being installed_
+7. Check for any errors
+8. Reboot machine
 
 ## Expected Installs
 
