@@ -43,7 +43,7 @@ Scripts for automating developer enviroment setup
 
 ## Expected Installs
 
-* Chocolatey (latest version)
+* Chocolatey (latest version) plus any patches
 * All dependencies specified in your `chocoPackages.config`
 * All modules specified in `poshModules.config`
 
