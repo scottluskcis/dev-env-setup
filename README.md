@@ -68,4 +68,8 @@ Then try adding these lines to the `setup.ps1` file just beneath the `Params ()`
 ```powershell
 [System.Net.WebRequest]::DefaultWebProxy = [System.Net.WebRequest]::GetSystemWebProxy()
 [System.Net.WebRequest]::DefaultWebProxy.Credentials = [System.Net.CredentialCache]::DefaultNetworkCredentials 
+
+### Uninstalling Chocolatey
+
+If you want to remove Chocolatey and **ALL** of the packages it has installed, follow the steps at [How to Uninstall](https://docs.chocolatey.org/en-us/choco/uninstallation)
 ```
