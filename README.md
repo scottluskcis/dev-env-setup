@@ -52,3 +52,20 @@ Scripts for automating developer enviroment setup
 * [Set Up A Development Environment Using Chocolatey
 ](https://chocolatey.org/docs/development-environment-setup)
 * [Install Command - choco install](https://chocolatey.org/docs/commandsinstall)
+
+## Troubleshooting
+
+### 407 Proxy Error 
+
+If you try to run the `setup.cmd` and get the following error
+
+```text
+The remote server returned an error: (407) Proxy Authentication Required.
+```
+
+Then try adding these lines to the `setup.ps1` file just beneath the `Params ()` 
+
+```powershell
+[System.Net.WebRequest]::DefaultWebProxy = [System.Net.WebRequest]::GetSystemWebProxy()
+[System.Net.WebRequest]::DefaultWebProxy.Credentials = [System.Net.CredentialCache]::DefaultNetworkCredentials 
+```
