@@ -2,7 +2,7 @@
 
 ## Overview
 
-Scripts for automating developer enviroment setup. Refere to this [repository](https://github.com/scottluskcis/dev-env-setup) for support.
+Scripts for automating developer enviroment setup. Refer to this [repository](https://github.com/scottluskcis/dev-env-setup) for updates.
 
 ## Steps
 
